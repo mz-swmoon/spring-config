@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: SpringConfig
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mz-swmoon/configs.git
+
+
+server:
+  port: ${PORT:8004}
+
+management:
+  security:
+    enabled: false
